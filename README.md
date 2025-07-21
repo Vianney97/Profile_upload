@@ -18,8 +18,8 @@ Dépendances
 - npm install
 
 Créer un fichier .env
-Email= email@exemple.com
-PASSWORD=MotDePasse
+- Email= email@exemple.com
+- PASSWORD=MotDePasse
 
 Execution des tests
-npx playwright test
+- npx playwright test
