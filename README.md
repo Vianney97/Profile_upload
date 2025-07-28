@@ -1,25 +1,43 @@
-Projet Upload photo de profil après connexion 
+# Projet Upload Photo de Profil après Connexion
 
-Le test couvre le scébario suivant:
+## Description
 
-- after visiting [www.welcometothejungle.com/fr/me/profile] webpage, clicking on [Se connecter] button, filling [Email, Mot de passe] inputs, clicking on [Se connecter> Modifier] buttons, uploading a [Photo de profil] file and clicking on [Enregistrer] button
+Ce projet automatise le test suivant sur le site [welcometothejungle.com](https://www.welcometothejungle.com/fr/me/profile) :
 
-Stack technique
+- Visiter la page profil utilisateur  
+- Cliquer sur le bouton **Se connecter**  
+- Remplir les champs **Email** et **Mot de passe**  
+- Cliquer sur les boutons **Se connecter** puis **Modifier**  
+- Télécharger une photo de profil  
+- Cliquer sur le bouton **Enregistrer**
 
-- Javascript
-- Dotenv pour la gestion des variables d'environnement
+## Technologies utilisées
 
+- JavaScript  
+- Dotenv (gestion des variables d'environnement)
 
-Installation et execution
-- git clone https://github.com/Vianney97/Profile_upload
-- cd nom-du-repo
+## Installation
 
-Dépendances
-- npm install
+1. Cloner le dépôt :
+   ```bash
+   git clone https://github.com/Vianney97/Profile_upload.git
+Aller dans le dossier du projet :
 
-Créer un fichier .env
-- Email= email@exemple.com
-- PASSWORD=MotDePasse
+cd Profile_upload
+## Installer les dépendances :
 
-Execution des tests
-- npx playwright test
+```bash
+npm install
+
+Configuration
+Créer un fichier .env à la racine du projet avec le contenu suivant :
+
+EMAIL=email@exemple.com
+PASSWORD=MotDePasse
+
+Installation des navigateurs:
+npx playwright install
+
+Exécution des tests
+
+npx playwright test
